@@ -1,0 +1,179 @@
+<!DOCTYPE html> <!-- buat form dalam div book-form -->
+<html>
+<head>
+	<title>Tok Aman Bali Beach Resort | Book online</title>
+	<link rel="shortcut icon" href="icon/tok aman bali icon.png">
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<style type="text/css">
+		body {font-family: 'Open Sans';margin: 0;color: 013243;}
+		#select, #con-book {border: none;background-color: #00A700;color: white;cursor: pointer;padding: 5px 10px;}
+		.background {background-image: url(img/TABBR_Swimming_Pool.jpg);background-position: center;background-size: cover;height: 100%;}
+		.header, .book-form {margin: 0 auto;background-color: white;opacity: 0.95;}
+		.header {padding: 10px;border-radius: 0 20px;width: 73%;}
+		.header img {width: 30%;}
+		.book-form {width: 80%;display: flex;flex-wrap: wrap;}
+		.book-form {margin-top: 40px;margin-bottom: 20px;padding: 20px;border-radius: 5px;}
+		.all-form {width: 50%;}#select {margin-bottom: 10px;}
+		#form, #form-1, #form-2, #form-3 {border-radius: 10px;}
+		.confirm {height: 100%;width: 30%;border: 2px dotted black;padding: 30px;background-color: #bdc3c7;}.content {margin: 0 auto;width: 100%;}
+		.content img {width: 70%;}
+		#table-head a {text-decoration: none;color: #015C2F;}
+		.book-form table, .book-form tr, .book-form td {border: 2px solid black;border-collapse: collapse;margin-top: 20px;}		
+	</style>
+</head>
+<body>
+	<div class="background">
+		<div class="header">
+			<table id="table-head">
+				<tr>
+					<td colspan="2" width="30%"><img src="icon/TokAmanBali2.png" alt="Tok Aman Bali Resort Logo"></td>
+					<td width="38%"><center><font size="5px"><b>Join a World of Unlimited Rewards</font><br><font size="3px">Treat yourself with free upgrades, discounts and exclusive offers</b></font></center></td>
+					<td width="5%"><center><a href="#"><input type="submit" name="Join" value="Join Now"><br>or sign in</a></center></td>
+				</tr>
+				<tr bgcolor="#CCEDCC">
+					<td><a href="#">Tok Aman Bali Beach Resort</a></td>
+					<td><a href="#">Map &#38 Directions</a></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="book-form"> 
+			<div class="all-form">
+				<a href="booking.html"><input type="submit" name="back-to-selection" value="Back to room selection" id="select"></a>
+
+				<form action="#" method="get"> <!-- form -->
+					
+				
+				<table id="form" width="70%">
+					<tr>
+						<td colspan="2" width="70%"><font size="4px"><b>Guest details for Deluxe Room</b></font></td>
+					</tr>
+					<tr>
+						<td height="70px"><font>First name</font><br><input type="text" name="firstname" required></td>
+						<td><font>Email address</font><br><input type="text" name="email" required></td>
+					</tr>
+					<tr>
+						<td><font>Last name</font><br><input type="text" name="lastname" required></td>
+						<td><font>Contact phone number</font><br><input type="text" name="phonenumber" required></td>			
+					</tr>
+				</table><br>
+				<table id="form-1" width="70%">
+					<tr>
+						<td colspan="2"  width="70%"><font size="4px"><b>Payment Card information</b></font></td>
+					</tr>
+					<tr>
+						<td><font>Card number</font><br><input type="text" name="card-number" required></td>
+						<td>
+							<font>Valid through</font><br>
+							<select name="month" required> 
+								<option></option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+							/
+							<select name="year" required>
+								<option></option>  
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><font>Cardholder's name</font><br><input type="text" name="cardholder-name" required></td>
+						<td><font>Card Security Code(CVV2)</font><br><input type="text" name="cvv2" required size="5px"></td>
+					</tr>
+				</table><br>
+				<table id="form-2" width="70%"> 
+					<tr>
+						<td width="70%"><font size="4px"><b>Select your preferences &#38 help us serve you better</b></font></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="additional"><font>I do not wish to receive	<br>newsletters &#38 other promotional <br>materials from Hotel Sentral <br>Management.</font></td>
+					</tr>
+				</table><br>
+				<table id="form-3" width="70%">
+					<tr>
+						<td colspan="2" width="70%"><font size="4px"><b>Personal information <i>(optional)</b></i></font></td>
+					</tr>
+					<tr>
+						<td>
+							<font>Country</font><br>
+							<select name="country">
+								<option></option>  
+								<option value="afghanistan">AFGHANISTAN</option>
+								<option value="aland island">ALAND ISLAND</option>
+								<option value="albania">ALBANIA</option>
+								<option value="algeria">ALGERIA</option>
+								<option value="malaysia">MALAYSIA</option>
+							</select>
+						</td>
+						<td><font>Company</font><br><input type="text" name="company"></td>
+					</tr>
+					<tr>
+						<td><font>Postal Address</font><br><input type="text" name="address"></td>
+						<td><font>Purpose of Stay</font><br><input type="text" name="purpose"></td>
+					</tr>
+					<tr>
+						<td><font>City/Location</font><br><input type="text" name="city"></td>
+						<td rowspan="3"><font>Special Requests/Remarks</font><br><textarea rows="7" cols="30"></textarea></td>
+					</tr>
+					<tr>
+						<td><font>State/Region</font><br><input type="text" name="state"></td>
+					</tr>
+					<tr>
+						<td><font>Postal/ZIP</font><br><input type="text" name="postal" size="5px"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="confirm">
+				<div class="content">
+					<h1>Summary</h1>
+					<font>Tok Aman Bali Beach Resort <br><b>Deluxe Room</b></font><br>
+					<img src="img/L292831.jpg" alt="deluxe"><br>
+					<font><b>Best Available Rate</b><br>
+						<b>2</b> Adults</font><br>
+					<font>Check-in : <b>Saturday, 4 November 2017</b></font><br>
+					<font>Check-out : <b>Sunday, 5 November 2017</b></font><br>
+					<br>
+					<font>Flexible rate with generous cancellation &#38 payment policies.</font>
+					<br><br>
+					<font><b><i>Rate Includes :</i></b></font>	
+					<ul>
+						<li>Daily breakfast for 2 persons.</li>
+						<li>Complementary WiFi Access.</li>
+						<li>One Complimentary parking.</li>
+						<li>Free to cancel up to 3 days before your stay date.</li>
+					</ul>
+					<font>The Tourism Tax is RM10 per room per night and is charged to tourists who are not Malaysian nationals or permanent residents holding a MyPR card. This tourism Tax will be collected upon check-in.</font><br><br>
+					<hr width="100%">
+					<font>Stay Total :</font><br>
+					<font>Taxes :</font><br>
+					<font>Deposit :</font><br><br>
+					<font><b>reservation total :</b></font><br>
+					<hr width="100%">
+					<br>
+					<input type="checkbox" name="agree" required> I agree with the <a href="#">terms &#38 conditions</a> by making this booking. <br><br>
+					<input id="con-book" type="submit" name="confirm-book" value="Confirm & Book">
+
+					</form>
+					
+ 				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

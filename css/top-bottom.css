@@ -1,0 +1,37 @@
+body {font-family: 'Open Sans';margin: 0;color: #666;} /*untuk div jadi full screen tanpa blank space*/
+
+/*bawah ini khas untuk semua yang guna*/
+input[type="submit"] {border: none;background-color: #00A700;font-size: 12px;color: white;padding: 5px 10px 5px 10px;cursor: pointer;}
+input[type="submit"]:hover {background-color: #006633;} /*button submit*/
+h1 {font-size: 42px;color: #1E824C;} /*heading 1*/
+
+.about-wrap, .info {background-size: cover;background-position: center;text-align: center;} /*untuk background image*/
+
+/*bawah ini khas untuk setiap satu*/
+.header {background-color: #ccedcc;padding-top: 5px;padding-bottom: 3px;width: 100%;}
+.logo-wrap {width: 30%;margin-left: 50px;}
+.logo-wrap img {width: 100px;height: 70px;}
+.logo-wrap, .form {display: inline;} /*khas untuk satu line gambar dan list*/
+.form, #form-i {float: right;margin-left: 20px;padding-top: 10px;} /*supaya label tetap diatas setiap input*/
+.form input[type="submit"] {margin-right: 30px;}
+.form input, label {display: block;font-size: 12px;}
+#form-i input[type="text"] {width: 50px;}
+.nav {background-color: #ccedcc;width: 100%;/*position: fixed;z-index: 100;opacity: 0.9;border-radius: 10px;*/}
+.nav li {display: inline;margin-right: 40px;}
+.nav a {text-decoration: none;color: #34495e;}
+.nav a:hover {border-bottom: 3px solid black;}
+.active {border-bottom: 3px solid black;} 
+/*last styling untuk header shj*/
+
+.image-wrap img {width: 100%;height: 530px;border-radius: 40px;opacity: 0.8;} /*untuk image bawah header*/
+
+/*styling untuk back to top button*/
+.back {margin: 0 auto;width: 160px;margin-bottom: 20px;} 
+.back a {background-color: #f44336;color: white;padding: 14px 25px;text-align: center;text-decoration: none;display: inline-block;}
+.back a:hover, .back a:active {background-color: red;} 
+/*back to top button last*/
+
+/*footer styling*/
+.footer {background-color: #006633;color: white;height: 20%;padding: 10px 25px;border-radius: 10px;opacity: 0.9;} 
+.media {width: 70%;float: left;display: inline;margin-top: 20px;} .media h3, .media img {display: inline;margin-right: 10px;} .media img {width: 25px;height: 25px;}
+.location {float: right;text-align: left;display: inline;font-size: 18px;width: 30%;padding-top: 20px;}
